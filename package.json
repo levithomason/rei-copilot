@@ -1,0 +1,37 @@
+{
+  "name": "rei-copilot",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://rei-copilot.now.sh",
+  "scripts": {
+    "start": "HTTPS=true react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "bash ./scripts/deploy.sh",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "lint": "prettier --write **/*.js"
+  },
+  "now": {
+    "alias": "rei-copilot.now.sh",
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.77.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-react": "^7.5.1",
+    "prettier": "^1.10.2"
+  }
+}
